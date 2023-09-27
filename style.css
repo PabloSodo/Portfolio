@@ -90,10 +90,20 @@ img.hero-inferior-imagen.img-fluid{
   padding: 25px;
 }
 
+
       /*About Me*/
 .aboutMe{
     height: 500px;
     padding: 25px;
+}
+.aboutMe {
+  /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/9d47df15-7b75-471b-86fb-a60475c5b429.png");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .aboutMe .container {
