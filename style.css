@@ -196,22 +196,21 @@ img.hero-inferior-imagen.img-fluid{
     display: none; 
   }
 }
-
 @media screen and (min-width: 700px){
   img.hero-inferior-imagen.img-fluid {
     max-width: 600px;
-}
-@media screen and (max-width: 400px){ /*projects*/
-  p.textSection{
+}}
+
+@media screen and (max-width: 425px){ /*projects*/
+  .textSection{
     font-size: 9px;
+    margin: 9px;
 }
 }
 @media screen and (max-width: 400px) {
   .overlay p {
     font-size: 18px;
   }
-
   .overlay i {
     font-size: 40px;
-  }
-}
+  }}
