@@ -72,7 +72,7 @@ button.btn.btn-info:hover{
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/piano.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/piano.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,7 +87,10 @@ button.btn.btn-info:hover{
   max-width: 250px;
   max-height: 250px;
   margin: 20px;
-  border: 2px solid #dddfdf;
+  filter: grayscale(50%);
+  /*border: 2px solid #dddfdf;*/
+  backdrop-filter: url(images/IMG_20230411_112815420_PORTRAIT~2.jpg) blur(10px) greyscale(80%);
+  
 }
 .hero-principal h2 {
   font-family: 'Anton', sans-serif;
