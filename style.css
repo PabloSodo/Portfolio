@@ -42,6 +42,19 @@ h1{
   font-size: 1.1rem;
   padding: 10px;
 }
+button.btn.btn-info{
+  font-size: 1.1rem;
+  margin: 20px 20px 80px 20px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(76, 76, 145);
+}
+button.btn.btn-info:hover{
+  background-color: rgb(51, 51, 97);
+  
+}
+
 .blackText{
   color: black;
 }
@@ -98,7 +111,7 @@ img.hero-inferior-imagen.img-fluid{
 }
 .aboutMe {
   /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/9d47df15-7b75-471b-86fb-a60475c5b429.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/9d47df15-7b75-471b-86fb-a60475c5b4293.png");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -199,6 +212,171 @@ img.hero-inferior-imagen.img-fluid{
   font-size: 60px;
   margin: 10px;
 }
+    /*Papers*/
+.papers{
+  min-height: 500px;
+  padding: 30px;
+}
+.papers .card{
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+}
+.papers .card-header{
+  font-weight: bold;
+}
+
+    /*Testimonials*/
+.testimonials{
+  padding: 40px 40px 80px 40px;
+}
+/*
+.testimonials .carousel{
+  max-width: 800px;
+}
+.carousel-item{
+  height: 500px;
+}*/
+
+.carousel-item .container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.testimonialsImg {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+.testimonialsText{
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+}
+.testimonialsInfo{
+  font-weight: bold;
+  text-align: center;
+}
+.testimonialsInfo p{
+  margin-bottom: 0;
+}
+.testimonialsInfo .client{
+  font-size:  1.2rem;
+}
+.testimonialsInfo .cargo{
+  font-size: 0.9rem;
+  color: #637ef3
+}
+    /*Contact*/
+.contact .container{
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+.contact .rectangle{ 
+  margin-top: -5rem;
+  max-width: 800px;
+  background-color: rgb(5, 54, 129);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+.contact .row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contact .description{
+  color: wheat;
+  font-size:  1.2rem;
+}
+.contact button{
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+.contact button:hover{
+  background-color: white;
+  color: black; 
+}
+.contact button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+.contact button:hover i{
+  color: black;
+}
+    /*footer*/
+footer{
+  min-height: 400px;
+}
+.footerIcon{
+  height: 80px;
+  width: 50px;
+  margin: 5px;
+  color: white;
+}
+.footerText{
+  font-size: 1.2rem;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.mailBox{
+  height: 50px;
+  width: 250px;
+  margin-bottom: 30px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 5%;
+}
+.mailBox:hover{
+  background-color:  white;
+  border: 2px solid rgb(5, 54, 129);
+}
+.mailBox a:hover{
+  color: black;
+}
+.mailBox a:hover i{
+  color: black;
+}
+.iconSocialMedia a{
+  width: 50px;
+  height: 50px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+.iconSocialMedia a:hover{
+  background-color:  white;
+  border: 2px solid rgb(5, 54, 129);
+}
+.iconSocialMedia i{
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+.iconSocialMedia a:hover i{
+  color: black;
+}
+div.copyright{
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 25px;
+}
 
     /*Responsive*/
 @media screen and (max-width: 767px){ /*query permite ocultar logo segun breakpoint*/
@@ -209,13 +387,14 @@ img.hero-inferior-imagen.img-fluid{
 @media screen and (min-width: 700px){
   img.hero-inferior-imagen.img-fluid {
     max-width: 600px;
-}}
+  }
+}
 
 @media screen and (max-width: 425px){ /*projects*/
   .textSection{
     font-size: 9px;
     margin: 9px;
-}
+  }
 }
 @media screen and (max-width: 400px) {
   .overlay p {
@@ -223,4 +402,16 @@ img.hero-inferior-imagen.img-fluid{
   }
   .overlay i {
     font-size: 40px;
-  }}
+  }
+}
+@media screen and (max-width: 800px) {
+  .testimonialsImg {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonialsText {
+    font-size: 18px;
+  }
+}
+
