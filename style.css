@@ -8,6 +8,10 @@
   align-items: center;
   justify-content: space-between;
 }
+.navbar h2{
+  display: inline;
+  padding: 5px;
+}
 
     /*General styles*/
 section {
@@ -146,7 +150,7 @@ img.hero-inferior-imagen.img-fluid{
   background-color: #1b1b32;
 }
 
-.experience i {
+.experience .principalI {
   font-size: 2.5rem;
   color: #637ef3;
   background-color: #0a0a23;
@@ -158,6 +162,13 @@ img.hero-inferior-imagen.img-fluid{
   font-weight: bold;
   margin: 10px 0;
 }
+.experience a {
+  text-decoration: none;
+  color: black;
+}
+.experience a:hover{
+  color: white;  
+}
 
 .badgesContainer{
   font-size: 18px;
@@ -166,6 +177,15 @@ img.hero-inferior-imagen.img-fluid{
 }
 .badge{
   margin: 5px;
+  max-width: 150px;
+}
+.studies .uniLogo1{
+  width: 20%;  
+  height: 20%;
+}
+.studies .uniLogo2{
+  width: 17%;  
+  height: 17%;
 }
 
     /*Project*/
